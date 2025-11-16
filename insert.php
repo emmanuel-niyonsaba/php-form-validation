@@ -40,8 +40,10 @@ if(mysqli_num_rows($emails)>0){
 else{
   if(!mysqli_query($conn,$insertQuery)){
     echo "Failed to insert".mysqli_error($conn);
+    header('location:report.php');
   } else{
     echo "Well inserted"; 
+    header('location:report.php');
   }
 }
 
