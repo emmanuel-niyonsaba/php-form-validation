@@ -22,7 +22,7 @@ $sql= mysqli_query($conn,"SELECT firstName,lastName,email FROM trainees");
 <body>
     <h1><a href="traineeLoginForm.php">Add Trainee</a></h1>
     <h1>All Trainees</h1>
-    <table style=" border: 2px;">
+    <table style=" border: 1px solid black; " border="1" cellspacing='0'>
 <tr>
     <th>No</th>
     <th>First Name</th>
