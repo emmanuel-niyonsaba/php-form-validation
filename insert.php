@@ -36,6 +36,7 @@ $emails = mysqli_query($conn,"SELECT * FROM trainees WHERE email='$email'");
 // print_r($result);
 if(mysqli_num_rows($emails)>0){
     echo "Use another emeal ";
+    header('location:traineeLoginForm.php');
 }
 else{
   if(!mysqli_query($conn,$insertQuery)){
